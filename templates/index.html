@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPFIT gym website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <!-- Latest compiled and minified CSS -->
+
+
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <span>MP</span>FIT </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">home</a>
+        <a href="#about">about</a>
+        <a href="#Equipments#">Equipments</a>
+        <a href="#pricing">pricing</a>
+        <a href="#trainers">trainers</a>
+        <a href="{{url_for('Login') }}">Login</a>
+        <a href="{{ url_for('Register') }}">Register</a>        
+    </nav>
+
+</header>
+
+<!-- header section ends     -->
+
+<!-- home section starts  -->
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(static/images/home-bg-1.jpeg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(static/images/home-bg-3.jpeg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(static/images/home-bg-2.jpeg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="{{ url_for('static', filename='images/about-img.jpg')}}" alt="">
+    </div>
+
+    <div class="content">
+        <span>[About Bodybuilding]</span>
+        <h3 class="title">[ Every day is a chance to progress and to become better ]</h3>
+        <p>Going to the gym every day can help improve your cardiovascular system, strengthen your muscles, help you maintain your weight, boost your mental health and decrease the odds that you'll develop other health conditions."</p>
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Body and Mind</h3>
+                <p>"The more acetylcholine that’s produced, the better the contraction, and better the gains you will get, So focused attention is very very important."
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Healthy life</h3>
+                <p>“If you have health, you probably will be happy, and if you have health and happiness, you have the wealth you need, even if it is not all you want.”</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Aim</h3>
+                <p>"Don't wait until you've reached your goal to be proud of yourself. Be proud of every step you take toward reaching that goal." </p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>workout</h3>
+                <p>“No matter how slow you go you're still lapping everyone on the couch.”</p>
+                <p>*workout plan will be shared after buying membership* </p>
+            </div>
+        
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- features section starts  -->
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>gym features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/f-img-1.jpg')}}" alt="">
+            </div>
+            <div class="content">
+                <img src="{{ url_for('static', filename='images/icon-1.png')}}" alt="">
+                <h3>body building</h3>
+                <p>“A bodybuilder is a sculptor who carries with him his own material.”</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/f-img-2.jpg')}}" alt="">
+            </div>
+            <div class="content">
+                <img src="{{ url_for('static', filename='images/icon-2.png')}}" alt="">
+                <h3>gym for men</h3>
+                <p>“No pain, no gain. Shut up and train.”</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/f-img-3.jpg')}}" alt="">
+            </div>
+            <div class="content">
+                <img src="{{ url_for('static', filename='images/icon-3.png')}}" alt="">
+                <h3>gym for women</h3>
+                <p>“A woman with a fit physique is more than a just hot body.”</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <div class="information">
+        <h5><span>pricing plan</span></h5>
+        <h3><p>affordable pricing plan for you</p></h3>
+
+    <h3>Abhi Nahi Toh Kabhi Nahi Do something today that your future self will thankyou for ㋡</h3>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+            <h3>for more options you have to login first !</h3>
+        </div>
+</section>
+
+<!-- pricing section ends -->
+
+<!-- trainers section starts  -->
+
+<section class="trainers" id="trainers">
+
+    <h1 class="heading"> <span>expert trainers</span> </h1>
+
+    <div class="box-container">
+        {% for i in data%}
+        <div class="box">
+            <img src="{{ url_for('static', filename='images/'+i[6])}}"
+                    alt="{{ url_for('static', filename='images/'+i[6])}}" style="color: rgb(252, 245, 245);">
+                <div class="content">
+                <span>expert trainer</span>
+                <h3>{{i[1]}}</h3>
+                <div class="share">                                        
+                    <a ><h4> login for more trainer details {{i[2]}}</h4></a>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- trainers section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <span>join us now</span>
+    <h3>get upto 10% discount</h3>
+    <p>get 10% off on bigger packages and get gears free </p>
+    <a href="#" class="btn">get discount</a>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- review section starts  -->
+
+<section class="review">
+
+    <div class="information">
+        <span>review-slider</span>
+        <h3>what our clients says --→</h3>
+        <p>what is our first priority? </p>
+        <p>[ our priority is to make our client happy by giving them best workout and diet plans ]</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>for Best trainers plus best Equipments join here </p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/pic-1.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>Rohit rankhambe</h3>
+                        <span>client</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <p>Best website for gym bros</p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/pic-2.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>Akash sharma</h3>
+                        <span>client</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>this gym helped me to lose fat and to gain muscles</p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/pic-3.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>Buddesh gaikwad</h3>
+                        <span>client</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>best girls in this gym you will find your soulmate here</p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/pic-4.jpg')}}" alt="">
+                    <div class="info">
+                        <h3>Ankit shende</h3>
+                        <span>client</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="links" href="#home">home</a>
+            <a class="links" href="#about">about</a>
+            <a class="links" href="#Equipments">Equipments</a>
+            <a class="links" href="#pricing">pricing</a>
+            <a class="links" href="#trainers">trainers</a>
+            <a class="links" href="#blogs">blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> monday : <i> 7:00am - 10:30pm </i> </p>
+            <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+            <p> friday : <i> 7:00am - 10:30pm </i> </p>
+            <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+            <p> sunday : <i> closed </i> </p>
+        </div>
+
+        <div class="box">
+            <h3>owner details</h3>
+            <p> <i class="fas fa-phone"></i> +91-8850290609 </p>
+            <p> <i class="fas fa-envelope"></i> mannpawar20@gmail.com </p>
+            <p> <i class="fas fa-map"></i> mumbai, india - 400010 </p>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100009409521186" class="fab fa-facebook-f"></a>
+                <a href="https://www.linkedin.com/in/mayuresh-pawar-a8b115233/" class="fab fa-linkedin"></a>
+                <a href="https://instagram.com/mayureshpawarr?" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" class="email" placeholder="enter your email" id="">
+                <input type="submit" value="subscribe" class="btn" >
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit"> created by <span>mr.MAYURESH PAWAR</span> | all rights reserved! </div>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{ url_for('static', filename='js/script.js')}}"></script>
+
+</body>
+</html>

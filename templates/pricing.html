@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive fitness and gym website design</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    
+
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <span>MP</span>FIT </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">home</a>
+        <a href="#about">about</a>
+        <a href="#Equipments">Equipments</a>
+        <a href="#pricing">pricing</a>
+        <a href="#trainers">trainers</a>
+        <a href="{{ url_for('Login') }}">Login</a>      
+        <a href="{{ url_for('Login') }}">Register</a>        
+    </nav>
+
+</header>
+
+<!-- header section ends     -->
+
+
+
+<!-- about section starts  -->
+<section class="pricing" id="pricing">
+<div class="information">
+    <span>pricing plan</span>
+    <h3>pricing plan packages</h3>
+    <p>*Abhi Nahi Toh Kabhi Nahi
+        Do something today that your future self will thankyou for* </p>
+    <p> <i class="fas fa-check"></i> cardio exercise </p>
+    <p> <i class="fas fa-check"></i> weight lifting </p>
+    <p> <i class="fas fa-check"></i> diet plans </p>
+    <p> <i class="fas fa-check"></i> overall results </p>
+    </div>
+
+    <div class="plan">
+        <h3>premium plan</h3>
+        <div class="price"><span>₹</span>5,000<span>/quaterly</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> personal training </p>
+        <p> <i class="fas fa-check"></i> cardio exercises </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results per month </p>
+       </div>
+       <a href="{{ url_for('pricingplan') }}" class="btn">buy now</a>
+    </div>
+    
+    <div class="plan">
+        <h3>annual premium plan</h3>
+        <div class="price"><span>₹</span>15,000<span>/yearly</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i>free fitness gears </p>
+        <p> <i class="fas fa-check"></i> supplementation advice </p>
+        <p> <i class="fas fa-check"></i> fat-burn exercises </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results per month </p>
+        <p> <i class="fas fa-check"></i> isolation training </p>
+       </div>
+       <a href="{{ url_for('pricingplan') }}" class="btn">buy now</a>
+    </div>
+   
+</section>
+
+<!-- about section ends -->
+
+
+<div class="credit"> created by <span>mr.MAYURESH PAWAR</span> | all rights reserved! </div>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{ url_for('static', filename='js/script.js')}}"></script>
+
+
+</body>
+</html>
+  

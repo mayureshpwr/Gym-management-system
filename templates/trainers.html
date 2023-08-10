@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPFIT gym website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <!-- Latest compiled and minified CSS -->
+
+
+</head>
+
+<body>
+
+   <!-- header section starts      -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <span>MP</span>FIT </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}">home</a>
+        <a href="#about">about</a>
+        <a href="#Equipments">Equipments</a>
+        <a href="#pricing">pricing</a>
+        <a href="#trainers">trainers</a>
+        <a href="{{url_for('Login') }}">Login</a>
+        <a href="{{ url_for('Register') }}">Register</a>        
+    </nav>
+
+</header>
+
+<!-- header section ends     -->
+
+     <!-- trainers section starts  -->
+
+     <section class="trainers" id="trainers">
+
+        <h1 class="heading"> <span>expert trainers information</span> </h1>
+
+        <div class="box-container"> 
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/trainer-1.jpg')}}" alt="">
+                <div class="content">
+                 <div class="share"></div>
+               
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/trainer-2.jpg')}}" alt="">
+                <div class="content">
+                    <div class="share"></div>   
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/trainer-3.jpg')}}" alt="">
+                <div class="content">
+                    <div class="share"></div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="box-container"> 
+            <div class="box">
+                <div class="content">
+                <h3>expert trainer 1</h3>
+                <div class="share"></div>   
+                <h3> name : mayuresh pawar</h3>
+                <div class="share"></div>
+                <h3> id : 200010</h3>
+                <div class="share"></div>
+                <h3> exp : 2years</h3>
+                <div class="share"></div>
+                <h3> experties : fat loss state</h3>
+                <div class="share"></div>
+                <h3> timing : 7am to 12pm </h3>
+                        <div class="share">
+                            <a href="https://www.facebook.com/profile.php?id=100009409521186" class="fab fa-facebook-f"></a>
+                            <a href="https://www.linkedin.com/in/mayuresh-pawar-a8b115233/" class="fab fa-linkedin"></a>
+                            <a href="https://instagram.com/mayureshpawarr?" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container"> 
+            <div class="box"> 
+                <div class="content">
+                    <h3>expert trainer 2</h3>
+                <div class="share"></div>   
+                <h3> name : SAHIL KHAN</h3>
+                <div class="share"></div>
+                <h3> id : 200020</h3>
+                <div class="share"></div>
+                <h3> exp : 20years</h3>
+                <div class="share"></div>
+                <h3> experties : fat loss state , muscle gain state</h3>
+                <div class="share"></div>
+                <h3> timing : 1pm to 6pm </h3>
+                        <div class="share">
+                            <a href="https://www.facebook.com/profile.php?id=100009409521186" class="fab fa-facebook-f"></a>
+                            <a href="https://www.linkedin.com/in/mayuresh-pawar-a8b115233/" class="fab fa-linkedin"></a>
+                            <a href="https://instagram.com/mayureshpawarr?" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="box-container"> 
+            <div class="box">
+                <div class="content">
+                    <h3>expert trainer 3</h3>
+                <div class="share"></div>   
+                <h3> name : SUNIT JADHAV</h3>
+                <div class="share"></div>
+                <h3> id : 200030</h3>
+                <div class="share"></div>
+                <h3> exp : 15years</h3>
+                <div class="share"></div>
+                <h3> experties : bulk body nutritionist</h3>
+                <div class="share"></div>
+                <h3> timing : 6pm to 10pm </h3>
+                        <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+       </section>
+
+    <!-- trainers section ends -->
+ <!-- footer section starts  -->
+
+ <section class="footer">
+    <div class="box-container">
+            <div class="box">
+                <h3>opening hours</h3>
+                <p> monday : <i> 7:00am - 10:30pm </i> </p>
+                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> friday : <i> 7:00am - 10:30pm </i> </p>
+                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+                <p> sunday : <i> closed </i> </p>
+            </div>
+    
+            <div class="box">
+                <h3>owner details</h3>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> Mayuresh@gmail.com </p>
+                <p> <i class="fas fa-map"></i> mumbai, india - 400010 </p>
+                <div class="share">
+                    <a href="https://www.facebook.com/profile.php?id=100009409521186" class="fab fa-facebook-f"></a>
+                    <a href="https://www.linkedin.com/in/mayuresh-pawar-a8b115233/" class="fab fa-linkedin"></a>
+                    <a href="https://instagram.com/mayureshpawarr?" class="fab fa-instagram"></a>
+                </div>
+    
+    </section>
+    
+    <div class="credit"> created by <span>MR .MAYURESH PAWAR</span> | all rights reserved! </div>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+
+</body>
+</html>
